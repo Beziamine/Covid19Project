@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/backgroundPrimary"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="22dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/tunisian"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/flag"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tunisia"
+                android:id="@+id/country_name"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_below="@id/flag"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2666974"
+                android:textStyle="bold"
+                android:id="@+id/tv_percent"
+                android:layout_above="@+id/tv_closed"
+                android:textSize="14sp"
+                android:textColor="@color/green"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/closed_cases"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:id="@+id/tv_closed"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relative_total">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_total"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_total"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/relative_total"
+                android:layout_marginTop="15dp"
+                android:id="@+id/relative_active">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_active"
+                    android:textSize="14sp"
+                    android:textColor="@color/yellow"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_active"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_new_cases"
+                    android:textSize="14sp"
+                    android:textColor="@color/rose"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_cases"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_new_cases"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@id/relative_recovered">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_recovered"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovered"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_recovered"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/relative_recovered"
+                android:id="@+id/relative_deaths"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_deaths"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deaths"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_deaths"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2666974"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_new_deaths"
+                    android:textSize="14sp"
+                    android:textColor="@color/cyan"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_deaths"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_new_deaths"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

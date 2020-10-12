@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="total_cases">إجمالي الحالات</string>
+    <string name="active">حالات نشطة</string>
+    <string name="recovered">حالات متعافية</string>
+    <string name="deaths">حالات وفاة</string>
+    <string name="closed">حالات مغلقة</string>
+    <string name="new_cases">حالات جديدة</string>
+    <string name="new_deaths">وفيات جديدة</string>
+    <string name="world">العالم</string>
+    <string name="tunisia">تونس</string>
+    <string name="last_update">اخر تحديث :</string>
+    <string name="all_countries">بلدان العالم</string>
+    <string name="total">المجموع</string>
+    <string name="closed_cases">حالات مغلقة</string>
+    <string name="today_new_cases">حالات جديدة</string>
+    <string name="today_new_deaths">وفيات جديدة</string>
+    <string name="error_network">عطب فني</string>
+    <string name="from_03_03_2020_to_01_06_2020">من 03/03/2020 إلى 11/10/20200</string>
+    <string name="total_deaths">حالات وفاة</string>
+    <string name="please_select_your_language">الرجاء اختيار لغتك</string>
+    <string name="go_to_dashboard">الصفحة الرئيسية</string>
+    <string name="please_select_mode">إختيار الإضاءة</string>
+    <string name="night_mode">ليل</string>
+    <string name="day_mode">نهار</string>
+    <string name="search">بحث</string>
+    <string name="filter_by">تصنيف حسب :</string>
+</resources>

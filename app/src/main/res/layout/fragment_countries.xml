@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundPrimary"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/relative_top">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/logo"
+            android:src="@drawable/img_covid_logo_new"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/refrech_selector_background"
+            android:id="@+id/refresh_countries"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_top"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/relative_title">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/globe_white"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/globe"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/all_countries"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/globe"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_title"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/filter_title">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/filter_by"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/relative_filters"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/filter_title">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/layout_relative_grey_selected"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/filter_total"
+            android:textStyle="bold"
+            android:text="@string/total"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_relative_green"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/filter_closed"
+            android:textColor="@color/white"
+            android:text="@string/closed"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_relative_red"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:paddingVertical="5dp"
+            android:id="@+id/filter_deaths"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/deaths"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/relative_search"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relative_filters">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_relative"
+            android:paddingVertical="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            android:hint="@string/search"
+            android:textCursorDrawable="@drawable/white_cursor"
+            android:drawableStart="@drawable/search_white"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/search"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_recycler"
+            android:layout_below="@+id/relative_search"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_countries"
+                tools:itemCount="4"
+                android:scrollbars="none"
+                tools:listitem="@layout/item_list_countries"/>
+
+
+        </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/blue"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

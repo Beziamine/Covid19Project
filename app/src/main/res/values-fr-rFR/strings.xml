@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="total_cases">Total</string>
+    <string name="active">Actifs</string>
+    <string name="recovered">Rétablis</string>
+    <string name="deaths">Décès</string>
+    <string name="closed">Fermé</string>
+    <string name="new_cases">Nv. Cas</string>
+    <string name="new_deaths">Nv. Décès</string>
+    <string name="world">Monde</string>
+    <string name="tunisia">Tunisie</string>
+    <string name="last_update">Mise à jour :</string>
+    <string name="all_countries">Pays</string>
+    <string name="total">Total</string>
+    <string name="closed_cases">Cas Fermés</string>
+    <string name="today_new_cases">Nouveaux Cas</string>
+    <string name="today_new_deaths">Nouveaux Décès</string>
+    <string name="error_network">Erreur Serveur</string>
+    <string name="from_03_03_2020_to_01_06_2020">De 03/03/2020 à 11/10/2020</string>
+    <string name="total_deaths">Décès</string>
+    <string name="please_select_your_language">Veuillez sélectionner votre langue</string>
+    <string name="go_to_dashboard">Menu Principal</string>
+    <string name="please_select_mode">Mode d\'affichage</string>
+    <string name="night_mode">Mode Nuit</string>
+    <string name="day_mode">Mode Jour</string>
+    <string name="search">Recherche</string>
+    <string name="filter_by">Filtrer par :</string>
+</resources>
