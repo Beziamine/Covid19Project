@@ -50,8 +50,10 @@ object NumberUtils {
             if(it.total_cases != 0)
             {
                 countriesModelEntity.closed_cases = "%.2f".format(((it.total_recovered!! + it.total_deaths!!)*100.toDouble())/it.total_cases!!) + " %"
+                countriesModelEntity.closed_cases_value = (((it.total_recovered!! + it.total_deaths!!)*100.toDouble())/it.total_cases!!)
             }else {
                 countriesModelEntity.closed_cases = "0,00 %"
+                countriesModelEntity.closed_cases_value = 0.0
             }
 
             newList += countriesModelEntity

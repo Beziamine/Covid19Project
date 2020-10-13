@@ -22,4 +22,5 @@ class CountriesModelEntity {
     var total_active_cases : Int? = null
     var total_serious_cases : Int? = null
     var closed_cases : String? = null
+    var closed_cases_value : Double? = null
 }
