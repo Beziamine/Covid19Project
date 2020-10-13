@@ -25,4 +25,8 @@
     <string name="day_mode">نهار</string>
     <string name="search">بحث</string>
     <string name="filter_by">تصنيف حسب :</string>
+    <string name="state">الوضعية</string>
+    <string name="good">جيدة</string>
+    <string name="medium">متوسطة</string>
+    <string name="bad">سيئة</string>
 </resources>

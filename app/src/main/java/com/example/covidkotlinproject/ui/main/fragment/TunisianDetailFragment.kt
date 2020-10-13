@@ -265,6 +265,17 @@ class TunisianDetailFragment : Fragment(){
         tv_closed.setText(("%.2f".format((i2+i3)*100.toDouble()/i)).toString() + " %")
 
 
+        if(((i2+i3)*100/i) >= 90){
+            tv_state.setText(getString(R.string.good))
+            tv_state.setTextColor(color(R.color.green))
+        }else if (((i2+i3)*100/i) < 90 && ((i2+i3)*100/i) >= 50){
+            tv_state.setText(getString(R.string.medium))
+            tv_state.setTextColor(color(R.color.yellow))
+        }else{
+            tv_state.setText(getString(R.string.bad))
+            tv_state.setTextColor(color(R.color.red))
+        }
+
     }
 
     private fun initNewCases(newCases: Int, newDeaths: Int) {

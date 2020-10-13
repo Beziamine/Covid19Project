@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/relative_flag"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp">
+            android:layout_marginStart="10dp">
 
             <ImageView
                 android:layout_width="100dp"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/relative_flag"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp">
+            android:layout_marginStart="10dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -80,15 +80,17 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true">
+            android:layout_toEndOf="@+id/relative_flag"
+            android:layout_marginStart="20dp">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="95dp"
+                android:layout_marginEnd="20dp"
                 android:background="@drawable/layout_relative"
                 android:id="@+id/relative_closed"
                 android:padding="10dp">
@@ -118,7 +120,39 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="95dp"
+                android:background="@drawable/layout_relative"
+                android:id="@+id/relative_state"
+                android:padding="10dp">
 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_state"
+                    android:textSize="24sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
 
 
         </LinearLayout>

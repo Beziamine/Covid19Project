@@ -102,13 +102,13 @@ class CountriesFragment : Fragment(){
 
                         when (selectedFilter) {
                             0 -> {
-                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.total_cases },0)
+                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.total_cases!!},0)
                             }
                             1 -> {
-                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.closed_cases },1)
+                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.closed_cases!!},1)
                             }
                             else -> {
-                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.total_deaths },2)
+                                recycler_countries.adapter = CountriesAdapter(view?.context,countriesSearched.sortedByDescending { it.total_deaths!!},2)
 
                             }
                         }
@@ -144,7 +144,7 @@ class CountriesFragment : Fragment(){
             when (indice) {
                 0 -> recycler_countries.adapter = CountriesAdapter(view?.context,countries.sortedByDescending { it.total_cases },0)
                 1 -> recycler_countries.adapter = CountriesAdapter(view?.context,countries.sortedByDescending { it.closed_cases },1)
-                else -> recycler_countries.adapter = CountriesAdapter(view?.context,countries.sortedByDescending { it.total_deaths },2)
+                else -> recycler_countries.adapter = CountriesAdapter(view?.context,countries.sortedByDescending { it.total_deaths},2)
             }
 
             if (countries.isNotEmpty())

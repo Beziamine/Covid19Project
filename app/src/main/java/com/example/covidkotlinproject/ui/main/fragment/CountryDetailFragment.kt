@@ -25,7 +25,13 @@ import com.google.android.gms.ads.InterstitialAd
 import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.fragment_countries.*
 import kotlinx.android.synthetic.main.fragment_detail_country.*
+import kotlinx.android.synthetic.main.fragment_detail_country.country_flag
+import kotlinx.android.synthetic.main.fragment_detail_country.country_name
+import kotlinx.android.synthetic.main.fragment_detail_country.relative_body
 import kotlinx.android.synthetic.main.fragment_detail_country.relative_error
+import kotlinx.android.synthetic.main.fragment_detail_country.title
+import kotlinx.android.synthetic.main.fragment_detail_country.tv_closed
+import kotlinx.android.synthetic.main.fragment_detail_country.tv_state
 import kotlinx.android.synthetic.main.fragment_main.*
 import kotlinx.android.synthetic.main.fragment_main.pie_chart
 import kotlinx.android.synthetic.main.fragment_main.progressBar
@@ -38,6 +44,7 @@ import kotlinx.android.synthetic.main.fragment_main.tv_percent_deaths
 import kotlinx.android.synthetic.main.fragment_main.tv_percent_recovered
 import kotlinx.android.synthetic.main.fragment_main.tv_recovered
 import kotlinx.android.synthetic.main.fragment_main.tv_total
+import kotlinx.android.synthetic.main.fragment_tunisian_detail.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CountryDetailFragment : Fragment(){
@@ -137,6 +144,16 @@ class CountryDetailFragment : Fragment(){
         tv_percent_deaths.setText(("%.2f".format(i3*100.toDouble()/i)).toString() + " %")
         tv_closed.setText(("%.2f".format((i2+i3)*100.toDouble()/i)).toString() + " %")
 
+        if(((i2+i3)*100/i) >= 90){
+            tv_state.setText(getString(R.string.good))
+            tv_state.setTextColor(color(R.color.green))
+        }else if (((i2+i3)*100/i) < 90 && ((i2+i3)*100/i) >= 50){
+            tv_state.setText(getString(R.string.medium))
+            tv_state.setTextColor(color(R.color.yellow))
+        }else{
+            tv_state.setText(getString(R.string.bad))
+            tv_state.setTextColor(color(R.color.red))
+        }
 
     }
 
