@@ -103,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/closed_cases"
                     android:textColor="@color/white"
+                    android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:layout_gravity="center"/>
@@ -115,7 +116,7 @@
                     android:textColor="@color/green"
                     android:textStyle="bold"
                     android:id="@+id/tv_closed"
-                    android:textSize="24sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="15dp"
                     android:layout_gravity="center"/>
 
@@ -137,6 +138,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/state"
                     android:textColor="@color/white"
+                    android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:layout_gravity="center"/>
@@ -149,7 +151,7 @@
                     android:textColor="@color/red"
                     android:textStyle="bold"
                     android:id="@+id/tv_state"
-                    android:textSize="24sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="15dp"
                     android:layout_gravity="center"/>
 
@@ -510,6 +512,17 @@
                     android:textColor="@color/grey"
                     android:layout_centerVertical="true" />
 
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/date_grey"
+                    android:id="@+id/clock"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/tv_last_update2"
+                    android:layout_centerVertical="true"/>
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -566,6 +579,15 @@
                     android:textSize="12sp"
                     android:textColor="@color/grey"
                     android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/date_grey"
+                    android:id="@+id/date2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/tv_last_update3"
+                    android:layout_centerVertical="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"

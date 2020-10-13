@@ -25,7 +25,7 @@
     <string name="day_mode">Mode Jour</string>
     <string name="search">Recherche</string>
     <string name="filter_by">Filtrer par :</string>
-    <string name="state">État</string>
+    <string name="state">État Générale</string>
     <string name="good">Bonne</string>
     <string name="medium">Moyenne</string>
     <string name="bad">Mauvaise</string>
