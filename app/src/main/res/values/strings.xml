@@ -17,7 +17,7 @@
     <string name="today_new_cases">Today New Cases</string>
     <string name="today_new_deaths">Today New Deaths</string>
     <string name="error_network">Error Network</string>
-    <string name="from_03_03_2020_to_01_06_2020">From 03/03/2020 To 11/10/2020</string>
+    <string name="from_03_03_2020_to_01_06_2020">From 03/03/2020 To </string>
     <string name="total_deaths">Total Deaths</string>
     <string name="please_select_your_language">Please select your language</string>
     <string name="go_to_dashboard">Go to Dashboard</string>

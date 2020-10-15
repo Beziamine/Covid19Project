@@ -224,5 +224,8 @@ data class TimelineItems (
     @SerializedName("10/08/20") val a219 : TunisianDetailChart?,
     @SerializedName("10/09/20") val a220 : TunisianDetailChart?,
     @SerializedName("10/10/20") val a221 : TunisianDetailChart?,
-    @SerializedName("10/11/20") val a222 : TunisianDetailChart?
+    @SerializedName("10/11/20") val a222 : TunisianDetailChart?,
+    @SerializedName("10/12/20") val a223 : TunisianDetailChart?,
+    @SerializedName("10/13/20") val a224 : TunisianDetailChart?,
+    @SerializedName("10/14/20") val a225 : TunisianDetailChart?
     )

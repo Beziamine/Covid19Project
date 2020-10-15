@@ -20,6 +20,8 @@ android {
         versionCode 1
         versionName "1.0"
         flavorDimensions "default"
+        buildConfigField("String", "LastDate", "\"14/10/2020\"")
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

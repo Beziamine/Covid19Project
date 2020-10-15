@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
+import com.example.covidkotlinproject.BuildConfig
 import com.example.covidkotlinproject.R
 import com.example.covidkotlinproject.api.local.entity.CountriesModelEntity
 import com.example.covidkotlinproject.api.local.entity.TunisianChartModelEntity
@@ -263,7 +264,8 @@ class TunisianDetailFragment : Fragment(){
         tv_percent_recovered.setText(("%.2f".format(i2*100.toDouble()/i)).toString() + " %")
         tv_percent_deaths.setText(("%.2f".format(i3*100.toDouble()/i)).toString() + " %")
         tv_closed.setText(("%.2f".format((i2+i3)*100.toDouble()/i)).toString() + " %")
-
+        tv_last_update2.setText(getString(R.string.from_03_03_2020_to_01_06_2020) + " " + BuildConfig.LastDate)
+        tv_last_update3.setText(getString(R.string.from_03_03_2020_to_01_06_2020) + " " + BuildConfig.LastDate)
 
         if(((i2+i3)*100/i) >= 90){
             tv_state.setText(getString(R.string.good))

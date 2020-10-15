@@ -16,7 +16,7 @@
     <string name="today_new_cases">Nouveaux Cas</string>
     <string name="today_new_deaths">Nouveaux Décès</string>
     <string name="error_network">Erreur Serveur</string>
-    <string name="from_03_03_2020_to_01_06_2020">De 03/03/2020 à 11/10/2020</string>
+    <string name="from_03_03_2020_to_01_06_2020">De 03/03/2020 à </string>
     <string name="total_deaths">Décès</string>
     <string name="please_select_your_language">Veuillez sélectionner votre langue</string>
     <string name="go_to_dashboard">Menu Principal</string>

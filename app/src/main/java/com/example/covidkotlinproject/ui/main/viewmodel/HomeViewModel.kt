@@ -520,6 +520,9 @@ class HomeViewModel(private val modelDao: MainDao, private val countriesDao: Cou
                         val modelChartExemple219 = ModelChartExemple()
                         val modelChartExemple220 = ModelChartExemple()
                         val modelChartExemple221 = ModelChartExemple()
+                        val modelChartExemple222 = ModelChartExemple()
+                        val modelChartExemple223 = ModelChartExemple()
+                        val modelChartExemple224 = ModelChartExemple()
 
                         modelChartExemple.reportDate = "04/03/2020"
                         modelChartExemple.totalConfirmed = tunisianDetail!!.timelineitems[0].a1!!.totalCases
@@ -1630,6 +1633,21 @@ class HomeViewModel(private val modelDao: MainDao, private val countriesDao: Cou
                         modelChartExemple221.totalConfirmed = tunisianDetail!!.timelineitems[0].a222!!.totalCases
                         modelChartExemple221.totalDeaths = tunisianDetail!!.timelineitems[0].a222!!.totalDeaths
                         list.add(modelChartExemple221)
+
+                        modelChartExemple222.reportDate = "12/10/2020"
+                        modelChartExemple222.totalConfirmed = tunisianDetail!!.timelineitems[0].a223!!.totalCases
+                        modelChartExemple222.totalDeaths = tunisianDetail!!.timelineitems[0].a223!!.totalDeaths
+                        list.add(modelChartExemple222)
+
+                        modelChartExemple223.reportDate = "13/10/2020"
+                        modelChartExemple223.totalConfirmed = tunisianDetail!!.timelineitems[0].a224!!.totalCases
+                        modelChartExemple223.totalDeaths = tunisianDetail!!.timelineitems[0].a224!!.totalDeaths
+                        list.add(modelChartExemple223)
+
+                        modelChartExemple224.reportDate = "14/10/2020"
+                        modelChartExemple224.totalConfirmed = tunisianDetail!!.timelineitems[0].a225!!.totalCases
+                        modelChartExemple224.totalDeaths = tunisianDetail!!.timelineitems[0].a225!!.totalDeaths
+                        list.add(modelChartExemple224)
 
 
 

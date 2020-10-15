@@ -16,7 +16,7 @@
     <string name="today_new_cases">حالات جديدة</string>
     <string name="today_new_deaths">وفيات جديدة</string>
     <string name="error_network">عطب فني</string>
-    <string name="from_03_03_2020_to_01_06_2020">من 03/03/2020 إلى 11/10/2020</string>
+    <string name="from_03_03_2020_to_01_06_2020">من 03/03/2020 إلى </string>
     <string name="total_deaths">حالات وفاة</string>
     <string name="please_select_your_language">الرجاء اختيار لغتك</string>
     <string name="go_to_dashboard">الصفحة الرئيسية</string>
