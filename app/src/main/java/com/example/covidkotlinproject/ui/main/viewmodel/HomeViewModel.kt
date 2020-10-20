@@ -523,6 +523,11 @@ class HomeViewModel(private val modelDao: MainDao, private val countriesDao: Cou
                         val modelChartExemple222 = ModelChartExemple()
                         val modelChartExemple223 = ModelChartExemple()
                         val modelChartExemple224 = ModelChartExemple()
+                        val modelChartExemple225 = ModelChartExemple()
+                        val modelChartExemple226 = ModelChartExemple()
+                        val modelChartExemple227 = ModelChartExemple()
+                        val modelChartExemple228 = ModelChartExemple()
+                        val modelChartExemple229 = ModelChartExemple()
 
                         modelChartExemple.reportDate = "04/03/2020"
                         modelChartExemple.totalConfirmed = tunisianDetail!!.timelineitems[0].a1!!.totalCases
@@ -1648,6 +1653,31 @@ class HomeViewModel(private val modelDao: MainDao, private val countriesDao: Cou
                         modelChartExemple224.totalConfirmed = tunisianDetail!!.timelineitems[0].a225!!.totalCases
                         modelChartExemple224.totalDeaths = tunisianDetail!!.timelineitems[0].a225!!.totalDeaths
                         list.add(modelChartExemple224)
+
+                        modelChartExemple225.reportDate = "15/10/2020"
+                        modelChartExemple225.totalConfirmed = tunisianDetail!!.timelineitems[0].a226!!.totalCases
+                        modelChartExemple225.totalDeaths = tunisianDetail!!.timelineitems[0].a226!!.totalDeaths
+                        list.add(modelChartExemple225)
+
+                        modelChartExemple226.reportDate = "16/10/2020"
+                        modelChartExemple226.totalConfirmed = tunisianDetail!!.timelineitems[0].a227!!.totalCases
+                        modelChartExemple226.totalDeaths = tunisianDetail!!.timelineitems[0].a227!!.totalDeaths
+                        list.add(modelChartExemple226)
+
+                        modelChartExemple227.reportDate = "17/10/2020"
+                        modelChartExemple227.totalConfirmed = tunisianDetail!!.timelineitems[0].a228!!.totalCases
+                        modelChartExemple227.totalDeaths = tunisianDetail!!.timelineitems[0].a228!!.totalDeaths
+                        list.add(modelChartExemple227)
+
+                        modelChartExemple228.reportDate = "18/10/2020"
+                        modelChartExemple228.totalConfirmed = tunisianDetail!!.timelineitems[0].a229!!.totalCases
+                        modelChartExemple228.totalDeaths = tunisianDetail!!.timelineitems[0].a229!!.totalDeaths
+                        list.add(modelChartExemple228)
+
+                        modelChartExemple229.reportDate = "19/10/2020"
+                        modelChartExemple229.totalConfirmed = tunisianDetail!!.timelineitems[0].a230!!.totalCases
+                        modelChartExemple229.totalDeaths = tunisianDetail!!.timelineitems[0].a230!!.totalDeaths
+                        list.add(modelChartExemple229)
 
 
 
